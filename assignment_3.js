@@ -5,14 +5,6 @@ const date = prop('DATE')
 const answer = prop('ANSWER')
 const first = prop(0)
 
-/**
- * There are certain things I won't implement because of time constraints.
- *
- * - axes
- * - grid
- * - transitions/tweening/interpolation
- */
-
 function toPairs(obj) {
   return Object.keys(obj).map(key => [key, obj[key]])
 }
