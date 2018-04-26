@@ -1,0 +1,25 @@
+{
+  "name": "gfk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assignment_1.js",
+  "dependencies": {
+    "d3": "^5.1.0",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^16.1.1",
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "test": "node assignment_1.js assignment_2.js assignment_4.js",
+    "build": "babel assignment_3.js | browserify - -o dist/bundle.js && cp index.html dist/",
+    "start": "npm run build && http-server ./dist/"
+  },
+  "author": "",
+  "license": "ISC"
+}
