@@ -1,8 +1,8 @@
 const request = require('request-promise-native')
 const assert = require('assert')
 
-function apply(fn, args) {
-  return args => fn(...args)
+function join(d) {
+  return arr => arr.join(d)
 }
 
 function getHelloWorld() {
@@ -10,7 +10,7 @@ function getHelloWorld() {
     request('https://cdn.gfkdaphne.com/tests/async.php?a=1'),
     request('https://cdn.gfkdaphne.com/tests/async.php?a=2'),
   ])
-    .then(([a, b]) => `${a} ${b}`)
+    .then(join(' '))
 }
 
 getHelloWorld()
