@@ -13,7 +13,8 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "browserify": "^16.1.1",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "pre-commit": "^1.2.2"
   },
   "scripts": {
     "test": "node assignment_1.js assignment_2.js assignment_4.js",
